@@ -1,0 +1,134 @@
+ * {
+     margin: 0;
+     padding: 0;
+     box-sizing: border-box;
+     font-family: 'Poppins', sans-serif;
+ }
+
+
+ body {
+     /* background: linear-gradient(135deg, #6dd5ed, #2193b0); */
+     background: url(images/sunny_day_on_the_farm_by_skybrushunlimited_dfn2e63-pre.jpg);
+     min-height: 100vh;
+     display: flex;
+     align-items: center;
+     justify-content: center;
+     color: #fff;
+     background-size: cover;
+ }
+
+ .search input {
+     border: none;
+     /* flex: 1; */
+     padding: 12px;
+     border-radius: 15px 15px;
+     outline: none;
+     font-size: 1rem;
+     border: 2px solid rgb(0, 0, 0);
+ }
+
+ .search button {
+     padding: 12px;
+     border: none;
+     background: #000000;
+     color: #2193b0;
+     font-weight: bold;
+     border-radius: 15px 15px;
+     font-size: 1rem;
+     color: rgb(0, 255, 255);
+ }
+
+ .container {
+     background: rgba(255, 255, 255, 0.15);
+     backdrop-filter: blur(15px);
+     box-shadow: 0 8px 25px rgba(0, 0, 0, 0.2);
+     text-align: center;
+     width: 350px;
+     border-radius: 20px;
+     padding: 25px;
+     border: 2px solid;
+     height: auto;
+
+ }
+
+ .container2 {
+     display: flex;
+     border-radius: 20px;
+     margin-top: 20px;
+ }
+
+ .container2 div {
+     /* background: rgba(255, 255, 255, 0.2); */
+     background: rgb(0, 0, 0);
+     color: white;
+     border-radius: 15px;
+     padding: 5px;
+     margin: 0 5px;
+     border: 2px solid rgb(0, 255, 17);
+     width: 250px;
+ }
+
+ .temp {
+     font-size: 3rem;
+     font-weight: 600;
+ }
+
+ .location {
+     font-size: 1.3rem;
+     margin-top: 4px;
+     margin-bottom: 5px;
+ }
+
+ /* .weather {
+     font-size: 70px;
+     margin: 15px 0;
+ } */
+
+ .weather-icon {
+     width: 200px;
+
+ }
+
+ .search button:hover {
+     background: #f1f1f1;
+ }
+
+ .celcius,
+ .speed {
+     font-size: 2rem;
+     color: rgb(34, 255, 0);
+ }
+ 
+
+
+
+
+/* debounce */
+
+.suggestions {
+  list-style: none;
+
+  position: absolute;
+  top: 75px;
+left: 0;
+  width: 60%;
+  background: #101010;
+  border: 1px solid #ccc;
+  border: none;
+  max-height: 200px;
+  overflow-y: auto;
+  z-index: 1000;
+margin-left: 47px;
+border-bottom-left-radius: 40px;
+border-bottom-right-radius: 40px;
+}
+
+.suggestions li {
+  padding: 8px;
+  cursor: pointer;
+}
+
+.suggestions li:hover {
+  background: #f0f0f0;
+  color: black;
+}

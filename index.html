@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather app</title>
+    <!-- fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+        rel="stylesheet">
+    <!-- css -->
+    <link rel="stylesheet" href="style.css">
+    <!-- fontawesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.0/css/all.min.css"
+        integrity="sha512-DxV+EoADOkOygM4IR9yXP8Sb2qwgidEmeqAEmDKIOfPRQZOWbXCzLC6vjbZyy0vPisbH2SyW27+ddLVCN+OMzQ=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+</head>
+
+<body>
+    <!-- all content -->
+    <div class="container ">
+        <!-- search box -->
+        <div class="search">
+            <input type="text" placeholder="Enter Your City">
+            <button>
+                <i class="fa-solid fa-magnifying-glass"></i>
+            </button>
+              <ul class="suggestions"></ul>
+        </div>
+        <!-- icon celcius city -->
+        <div><img src="images/clear.png" alt="" class="weather-icon"></div>
+
+        <div class="temp">28°C</div>
+
+        <div class="location">New Delhi, IN</div>
+        <!-- humidity and wind -->
+        <div class="container2">
+
+            <div class="humidity">
+                <h3>Humidity</h3>
+                <p class="celcius">60%</p>
+            </div>
+
+            <div class="wind">
+                <h3>Wind</h3>
+                <p class="speed">14 km/h</p>
+            </div>
+
+        </div>
+        <!-- script tag -->
+        <script src="script.js"></script>
+</body>
+
+</html>
